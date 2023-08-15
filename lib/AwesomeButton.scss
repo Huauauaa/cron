@@ -4,8 +4,21 @@
   width: fit-content;
   border: 1px solid #ccc;
   border-radius: 3px;
+  color: #fff;
   &:hover {
     cursor: pointer;
     transform: scale(1.1);
+  }
+  &.default {
+    color: #333333;
+  }
+  &.primary {
+    background-color: #a2d1d7;
+  }
+  &.success {
+    background-color: #95c59b;
+  }
+  &.error {
+    background-color: #e18879;
   }
 }
