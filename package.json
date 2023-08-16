@@ -25,6 +25,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "test": "jest",
+    "publish": "npm publish --access=public",
     "prepare": "husky install"
   },
   "devDependencies": {
