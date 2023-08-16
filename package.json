@@ -1,6 +1,5 @@
 {
-  "name": "cron",
-  "private": true,
+  "name": "@harvey0379/cron",
   "author": "Harvey",
   "license": "MIT",
   "repository": "github:Huauauaa/cron",
@@ -8,24 +7,18 @@
   "bugs": {
     "url": "https://github.com/Huauauaa/cron/issues"
   },
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-alpha.3",
   "files": [
     "dist",
     "index.d.ts"
   ],
-  "main": "./dist/cron.umd.cjs",
-  "module": "./dist/cron.js",
+  "main": "./dist/cron.umd.js",
+  "module": "./dist/cron.mjs",
   "types": "./index.d.ts",
-  "exports": {
-    "types": "./index.d.ts",
-    "import": "./dist/cron.js",
-    "require": "./dist/cron.umd.cjs"
-  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "test": "jest",
-    "publish": "npm publish --access=public",
     "prepare": "husky install"
   },
   "devDependencies": {

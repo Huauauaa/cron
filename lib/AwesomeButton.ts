@@ -3,6 +3,7 @@ import template from './AwesomeButton.html?raw'
 
 export class AwesomeButton extends HTMLElement {
   dom: Element = null
+  bar: Bar = null
   constructor() {
     super()
 

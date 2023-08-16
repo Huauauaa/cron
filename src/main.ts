@@ -1,1 +1,3 @@
-import '../lib/main'
+import cron from '../lib/main'
+
+cron.install()
