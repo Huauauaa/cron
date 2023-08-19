@@ -1,0 +1,45 @@
+$border-color: #ccc;
+$primary-color: #2f78e8;
+$active-background: #c8e0fc;
+.content {
+  height: 200px;
+  background-color: #eee;
+}
+
+.cron-type {
+  display: flex;
+  width: fit-content;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  overflow: hidden;
+  input[type='radio'] {
+    display: none;
+  }
+}
+
+.type-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid $border-color;
+  &:hover {
+    background-color: darken($color: #fff, $amount: 5);
+  }
+  &:last-of-type {
+    border-right: none;
+  }
+  &.active {
+    background-color: $active-background;
+    &:hover {
+      background-color: darken($color: $active-background, $amount: 5);
+    }
+  }
+
+  label {
+    width: 50px;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+    display: inline-block;
+  }
+}
