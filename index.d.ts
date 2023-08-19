@@ -1,1 +1,3 @@
-/// <reference types="./lib/feature" />
+declare interface Bar {
+  id: string
+}

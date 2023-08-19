@@ -1,7 +1,7 @@
-import { add } from './add'
-const cron = { add }
+import { AwesomeButton } from './AwesomeButton'
 
-// @ts-ignore
-window.cron = cron
+const install = () => {
+  customElements.define('awesome-button', AwesomeButton)
+}
 
-export default cron
+export default { AwesomeButton, install }
